@@ -1,0 +1,48 @@
+{{ $allPages := .Site.Pages }}
+{{ range .Site.Home.Translations }}
+{{ $allPages = $allPages | lang.Merge .Site.Pages }}
+{{ end }}
+
+{{ $regularPages := .Site.RegularPages }}
+{{ range .Site.Home.Translations }}
+{{ $regularPages = $regularPages | lang.Merge .Site.RegularPages }}
+{{ end }}
+
+{{ $banners := (where $regularPages "Section" "banners") }}
+{{ range $banners }}
+<div class="{{ .Params.bannerStyleClass }}">
+    <div class="{{ .Params.gridClass }}">
+        {{ if .Params.contentFirst }}
+        <div class="col">
+            <h1>{{ .Title }}</h1>
+            <p>{{.Content}}</p>
+            {{ range.Params.buttons }}
+            <a href={{.link}}>
+                <button class={{.class}}>
+                    {{.label}}
+                </button>
+            </a>
+            {{ end }}
+        </div>
+        <div class="col">
+            <img src="{{ .RelPermalink }}{{ .Params.imageURL }}" style="padding-top: 30px; max-width: 250px; max-height: 250px;"/>
+        </div>
+        {{ else }}
+        <div class="col">
+            <img src="{{ .RelPermalink }}{{ .Params.imageURL }}" style="padding-top: 30px; max-width: 250px; max-height: 250px;"/>
+        </div>
+        <div class="col">
+            <h1>{{ .Title }}</h1>
+            <p>{{.Content}}</p>
+            {{ range.Params.buttons }}
+            <a href={{.link}}>
+                <button class={{.class}}>
+                    {{.label}}
+                </button>
+            </a>
+            {{ end }}
+        </div>
+        {{ end }}
+    </div>
+</div>
+{{ end }}
