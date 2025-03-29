@@ -10,7 +10,13 @@
 
 {{ $banners := (where $regularPages "Section" "banners") }}
 {{ range $banners }}
-<div class="{{ .Params.bannerStyleClass }}">
+
+{{ $image := resources.Get ( .Params.imagePath) }}
+<section class="p-section">
+<div class="p-section--shallow">
+    <div class="row">
+        <hr class="p-rule">
+    </div>
     <div class="{{ .Params.gridClass }}">
         {{ if .Params.contentFirst }}
         <div class="col">
@@ -25,11 +31,11 @@
             {{ end }}
         </div>
         <div class="col">
-            <img src="{{ .RelPermalink }}{{ .Params.imageURL }}" style="padding-top: 30px; max-width: 250px; max-height: 250px;"/>
+            <img src="{{ $image.RelPermalink }}" style='{{ .Params.imageStyle | safeCSS }}'/>
         </div>
         {{ else }}
         <div class="col">
-            <img src="{{ .RelPermalink }}{{ .Params.imageURL }}" style="padding-top: 30px; max-width: 250px; max-height: 250px;"/>
+            <img src="{{ $image.RelPermalink }}" style='{{ .Params.imageStyle | safeCSS }}'/>
         </div>
         <div class="col">
             <h1>{{ .Title }}</h1>
@@ -45,4 +51,5 @@
         {{ end }}
     </div>
 </div>
+</section>
 {{ end }}

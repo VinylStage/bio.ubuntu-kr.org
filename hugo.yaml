@@ -1,7 +1,8 @@
 baseURL: 'https://bio.ubuntu-kr.org/'
-languageCode: 'en-us'
+languageCode: 'ko-kr'
 title: 'Ubuntu Korea Community Bio'
-
+defaultContentLanguageInSubdir: true
+defaultContentLanguage: ko
 mediaTypes:
   text/vcard:
     suffixes:
@@ -22,7 +23,6 @@ outputs:
    - vcf
   section:
    - HTML
-defaultContentLanguage: ko
 languages:
   ko:
     languageName: 한국어
@@ -38,14 +38,14 @@ languages:
         Ubuntu 및 Canonical 은 Canonical Ltd. 의 등록 상표입니다.
     menu:
       main:
-      # - identifier: about-group
-      #   name: 소개
-      #   weight: 2
-      # - identifier: about
-      #   parent: about-group
-      #   name: 커뮤니티 소개
-      #   url: about
-      #   weight: 24
+      - identifier: about-group
+        name: 소개
+        weight: 2
+      - identifier: about
+        parent: about-group
+        name: 커뮤니티 소개
+        url: about
+        weight: 24
    
   en:
     languageName: English
@@ -61,11 +61,11 @@ languages:
         Ubuntu and Canonical are registered trademarks of Canonical Ltd.
     menu:
       main:
-      # - identifier: about-group
-      #   name: 소개
-      #   weight: 2
-      # - identifier: about
-      #   parent: about-group
-      #   name: 커뮤니티 소개
-      #   url: about
-      #   weight: 24
+      - identifier: about-group
+        name: 소개
+        weight: 2
+      - identifier: about
+        parent: about-group
+        name: 커뮤니티 소개
+        url: about
+        weight: 24

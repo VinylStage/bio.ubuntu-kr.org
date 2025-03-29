@@ -1,0 +1,8 @@
+[contact_button]
+other = "연락처 저장하기"
+
+[contact_email]
+other = "이메일로 연락하기"
+
+[source_code]
+other = "소스코드 확인"

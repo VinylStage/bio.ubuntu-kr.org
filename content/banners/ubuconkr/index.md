@@ -1,7 +1,10 @@
 ---
 title: UbuCon Korea
-imageURL: ./ubucon.svg
-bannerStyleClass: p-suru--fan-bottom
+imagePath: images/ubucon.svg
+imageStyle: | 
+  padding-top: 30px; 
+  max-width: 250px; 
+  max-height: 250px;
 gridClass: row--75-25
 contentFirst: true
 buttons:

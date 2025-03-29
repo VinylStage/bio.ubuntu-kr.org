@@ -1,0 +1,26 @@
+<footer class="l-footer--sticky p-strip--dark">
+
+    <nav class="row" aria-label="Footer">
+        <div class="has-cookie">
+            <h3>{{.Site.Title}}</h3>
+            <p>
+                {{.Site.Params.copyright}}
+            </p>
+            <ul class="p-inline-list--middot">
+                <li class="p-inline-list__item">
+                    <a href={WebsiteConfig.footer.contactUs}
+                        ><small>{{ i18n "contact_email" }}</small></a
+                    >
+                </li>
+                <li class="p-inline-list__item">
+                    <a href={WebsiteConfig.footer.srcRepoUrl}
+                        ><small>{{  i18n "source_code" }}</small></a
+                    >
+                </li>
+            </ul>
+            <span class="u-off-screen"
+                ><a href="#">Go to the top of the page</a></span
+            >
+        </div>
+    </nav>
+</footer>
