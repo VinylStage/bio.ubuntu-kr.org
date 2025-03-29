@@ -13,7 +13,7 @@ social:
     link: https://github.com/zeroday0619
   - label: LinkedIn | Euiseo Cha
     typeLabel: LinkedIn
-    link: www.linkedin.com/in/euiseo-cha
+    link: https://www.linkedin.com/in/euiseo-cha
 button:
   label: Book a meeting with me
   link: https://cal.com/euiseo.cha
