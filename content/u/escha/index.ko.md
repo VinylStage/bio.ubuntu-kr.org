@@ -13,7 +13,7 @@ social:
     link: https://github.com/zeroday0619
   - label: LinkedIn | Euiseo Cha
     typeLabel: LinkedIn
-    link: www.linkedin.com/in/euiseo-cha
+    link: https://www.linkedin.com/in/euiseo-cha
 button:
   label: 일정 예약하기
   link: https://cal.com/euiseo.cha
