@@ -7,6 +7,8 @@ N;CHARSET=UTF-8:{{.Params.vcf.lastName}};{{.Params.vcf.firstName}};;;
 TITLE;CHARSET=UTF-8:{{.Params.vcf.work.title}}
 ORG;CHARSET=UTF-8:{{.Params.vcf.work.org}}
 ROLE;CHARSET=UTF-8:{{.Params.vcf.work.role}}
-{{ range .Params.social }}URL;TYPE={{.typeLabel}}:{{.link}}
+URL;TYPE=Card:{{.Permalink}}
+{{ range .Site.Params.vcardLinks }}URL;TYPE={{.label}}:{{.link}}
+{{ end }}{{ range .Params.social }}URL;TYPE={{.typeLabel}}:{{.link}}
 {{ end }}{{ with .GitInfo }}REV:{{ .CommitDate }}{{end}}
 END:VCARD

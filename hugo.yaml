@@ -3,6 +3,10 @@ languageCode: 'ko-kr'
 title: 'Ubuntu Korea Community Bio'
 defaultContentLanguage: ko
 enableGitInfo: true
+params:
+  vcardLinks:
+    - label: Homepage
+      link: https://ubuntu-kr.org
 mediaTypes:
   text/vcard:
     suffixes:
