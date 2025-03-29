@@ -3,7 +3,7 @@ VERSION:3.0
 FN;CHARSET=UTF-8:{{.Title}}
 N;CHARSET=UTF-8:{{.Params.vcf.lastName}};{{.Params.vcf.firstName}};;;
 {{ range .Params.vcf.emails }}EMAIL;CHARSET=UTF-8;type=WORK,INTERNET:{{.}}
-{{ end }}TEL;TYPE=HOME,VOICE:+821095878376
+{{ end }}TEL;TYPE=HOME,VOICE:{{.Params.vcf.phone}}
 TITLE;CHARSET=UTF-8:{{.Params.vcf.work.title}}
 ORG;CHARSET=UTF-8:{{.Params.vcf.work.org}}
 ROLE;CHARSET=UTF-8:{{.Params.vcf.work.role}}
