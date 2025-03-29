@@ -2,6 +2,7 @@ baseURL: 'https://bio.ubuntu-kr.org/'
 languageCode: 'ko-kr'
 title: 'Ubuntu Korea Community Bio'
 defaultContentLanguage: ko
+enableGitInfo: true
 mediaTypes:
   text/vcard:
     suffixes:
