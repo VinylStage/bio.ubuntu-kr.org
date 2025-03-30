@@ -14,6 +14,10 @@ social:
   - label: LinkedIn | Euiseo Cha
     typeLabel: LinkedIn
     link: https://www.linkedin.com/in/euiseo-cha
+  - label: OpenPGP | 39F74FF9CEA87CC9
+    typeLabel: OpenPGP Key
+    link: https://keyserver.ubuntu.com/pks/lookup?fingerprint=on&op=index&search=0x55A5EA46C60A959E75119B4F39F74FF9CEA87CC9
+button:
 button:
   label: Book a meeting with me
   link: https://cal.com/euiseo.cha
