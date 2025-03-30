@@ -17,6 +17,9 @@ social:
   - label: LinkedIn | youngbin-han
     typeLabel: LinkedIn
     link: https://www.linkedin.com/in/youngbin-han/
+  - label: OpenPGP | ACFF5149B117571E
+    typeLabel: OpenPGP Key
+    link: https://keyserver.ubuntu.com/pks/lookup?fingerprint=on&op=index&search=0x22BE56487B69D6CDF99D45AFACFF5149B117571E
 button:
   label: 일정 예약하기
   link: https://cal.com/youngbin
