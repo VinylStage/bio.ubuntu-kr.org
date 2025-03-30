@@ -8,12 +8,12 @@
             </p>
             <ul class="p-inline-list--middot">
                 <li class="p-inline-list__item">
-                    <a href={WebsiteConfig.footer.contactUs}
+                    <a href="mailto:{{ .Site.Params.emailContact }}"
                         ><small>{{ i18n "contact_email" }}</small></a
                     >
                 </li>
                 <li class="p-inline-list__item">
-                    <a href={WebsiteConfig.footer.srcRepoUrl}
+                    <a href="{{ .Site.Params.sourceRepoLink }}"
                         ><small>{{  i18n "source_code" }}</small></a
                     >
                 </li>

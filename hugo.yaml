@@ -4,6 +4,8 @@ title: 'Ubuntu Korea Community Bio'
 defaultContentLanguage: ko
 enableGitInfo: true
 params:
+  sourceRepoLink: https://github.com/ubuntu-kr/bio.ubuntu-kr.org
+  emailContact: contact@ubuntu-kr.org
   vcardLinks:
     - label: Homepage
       link: https://ubuntu-kr.org
