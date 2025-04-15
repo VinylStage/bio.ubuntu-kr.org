@@ -27,7 +27,7 @@ vcf:
     org: Ubuntu Korea Community
     role: Forum Moderator
     title: Organizer
-  phone: +821090614607
+  phone: +82-10-9061-4607
   emails:
     - euiseocha@ubuntu.com
     - zeroday0619@ubuntu-kr.org
