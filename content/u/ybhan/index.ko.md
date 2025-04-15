@@ -30,7 +30,7 @@ vcf:
     org: Ubuntu Korea Community
     role: Advisor
     title: Organizer
-  phone: +82-10-9589-7837
+  phone: +82-10-9587-8376
   emails:
     - ybhan@ubuntu.com
     - youngbin@ubuntu-kr.org
